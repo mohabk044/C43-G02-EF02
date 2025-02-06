@@ -5,6 +5,8 @@ VisualStudioVersion = 17.12.35707.178 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo", "Demo\Demo.csproj", "{1150EAC1-C8FE-49CC-B56F-77372FD79B75}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFCSession02FluentAPIS", "EFCSession02FluentAPIS\EFCSession02FluentAPIS.csproj", "{F12B503A-E8B7-4068-A7B1-1CDF5BD767E4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{1150EAC1-C8FE-49CC-B56F-77372FD79B75}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1150EAC1-C8FE-49CC-B56F-77372FD79B75}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1150EAC1-C8FE-49CC-B56F-77372FD79B75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F12B503A-E8B7-4068-A7B1-1CDF5BD767E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F12B503A-E8B7-4068-A7B1-1CDF5BD767E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F12B503A-E8B7-4068-A7B1-1CDF5BD767E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F12B503A-E8B7-4068-A7B1-1CDF5BD767E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
