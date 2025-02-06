@@ -13,7 +13,7 @@ namespace Demo.Data.Migrations
         {
             migrationBuilder.CreateTable(
                 name: "Departments",
-                columns: table => new
+                columns: table => new 
                 {
                     DeptId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "10, 10"),
