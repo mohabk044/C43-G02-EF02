@@ -4,16 +4,19 @@ using Demo.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace Demo.Migrations
+namespace Demo.Data.Migrations
 {
     [DbContext(typeof(CompanyDbContext))]
-    partial class CompanyDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250206140145_Initial")]
+    partial class Initial
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -54,29 +57,6 @@ namespace Demo.Migrations
                     b.HasKey("Code");
 
                     b.ToTable("Employees");
-                });
-
-            modelBuilder.Entity("EFCSession02FluentAPIS.Department", b =>
-                {
-                    b.Property<int>("DeptId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("DeptId"), 10L, 10);
-
-                    b.Property<DateOnly>("CreationDate")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("date")
-                        .HasDefaultValueSql("getdate()");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("varchar")
-                        .HasColumnName("DepartmentName");
-
-                    b.HasKey("DeptId");
-
-                    b.ToTable("Departments");
                 });
 #pragma warning restore 612, 618
         }
